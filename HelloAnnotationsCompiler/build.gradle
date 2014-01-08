@@ -1,0 +1,23 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:0.7.+'
+    }
+}
+
+apply plugin: 'java'
+
+sourceSets {
+    main {
+        java {
+            srcDirs =  ['src/main/java', '../HelloAnnotationsAPI/src/main/java']
+        }
+
+    }
+}
+
+dependencies {
+    compile project(':HelloAnnotationsAPI')
+}
