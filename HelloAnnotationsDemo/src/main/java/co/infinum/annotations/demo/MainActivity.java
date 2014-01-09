@@ -54,8 +54,6 @@ public class MainActivity extends ActionBarActivity {
             builder.setPositiveButton("Ok", null);
             builder.show();
         }
-
-
     }
 
     public static Object invoke(Object object, String methodName, Object... args) throws Exception {

@@ -69,7 +69,7 @@ public class HelloProcessor extends AbstractProcessor {
             writer.flush();
             writer.close();
         } catch (IOException e) {
-            e.printStackTrace();
+
         }
 
         return true;
